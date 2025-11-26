@@ -3,3 +3,6 @@ venv/
 
 # Environment Variables
 .env
+
+# Database
+db.sqlite3
