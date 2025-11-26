@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package auth;
+
+// Google Authentication Service
+service AuthService {
+  rpc StartGoogleAuth(GoogleAuthRequest) returns (AuthResponse);
+}
+
+// Request containing the Google ID token
+message GoogleAuthRequest {
+  string token = 1;
+}
+
+// Response containing JWT tokens + user info
+message AuthResponse {
+  string access_token = 1;
+  string refresh_token = 2;
+  string email = 3;
+  string name = 4;
+}
