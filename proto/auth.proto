@@ -7,9 +7,9 @@ service AuthService {
   rpc StartGoogleAuth(GoogleAuthRequest) returns (AuthResponse);
 }
 
-// Request containing the Google ID token
+// Request containing the Google authorization code
 message GoogleAuthRequest {
-  string token = 1;
+  string code = 1;
 }
 
 // Response containing JWT tokens + user info

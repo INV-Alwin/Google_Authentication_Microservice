@@ -4,12 +4,12 @@ from grpc_client import AuthGRPCClient
 
 class GoogleAuthCallback(APIView):
     def post(self, request):
-        token = request.data.get("token")
+        code = request.data.get("code")
 
-        if not token:
-            return Response({"error": "token missing"}, status=400)
+        if not code:
+            return Response({"error": "code missing"}, status=400)
 
         grpc_client = AuthGRPCClient()
-        grpc_response = grpc_client.start_google_auth(token)
+        grpc_response = grpc_client.start_google_auth(code)
 
         return Response(grpc_response)

@@ -19,9 +19,9 @@ class AuthServiceHandler(auth_pb2_grpc.AuthServiceServicer):
         self.google_auth = GoogleAuthService()  # instantiate once
 
     def StartGoogleAuth(self, request, context):
-        token = request.token
+        code = request.code
         try:
-            result = self.google_auth.authenticate(token)
+            result = self.google_auth.authenticate(code)
             return auth_pb2.AuthResponse(
                 access_token=result["access"],
                 refresh_token=result["refresh"],

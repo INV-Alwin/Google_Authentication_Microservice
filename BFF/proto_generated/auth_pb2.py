@@ -24,7 +24,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\nauth.proto\x12\x04\x61uth\"\"\n\x11GoogleAuthRequest\x12\r\n\x05token\x18\x01 \x01(\t\"X\n\x0c\x41uthResponse\x12\x14\n\x0c\x61\x63\x63\x65ss_token\x18\x01 \x01(\t\x12\x15\n\rrefresh_token\x18\x02 \x01(\t\x12\r\n\x05\x65mail\x18\x03 \x01(\t\x12\x0c\n\x04name\x18\x04 \x01(\t2M\n\x0b\x41uthService\x12>\n\x0fStartGoogleAuth\x12\x17.auth.GoogleAuthRequest\x1a\x12.auth.AuthResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\nauth.proto\x12\x04\x61uth\"!\n\x11GoogleAuthRequest\x12\x0c\n\x04\x63ode\x18\x01 \x01(\t\"X\n\x0c\x41uthResponse\x12\x14\n\x0c\x61\x63\x63\x65ss_token\x18\x01 \x01(\t\x12\x15\n\rrefresh_token\x18\x02 \x01(\t\x12\r\n\x05\x65mail\x18\x03 \x01(\t\x12\x0c\n\x04name\x18\x04 \x01(\t2M\n\x0b\x41uthService\x12>\n\x0fStartGoogleAuth\x12\x17.auth.GoogleAuthRequest\x1a\x12.auth.AuthResponseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -32,9 +32,9 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'auth_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
   _globals['_GOOGLEAUTHREQUEST']._serialized_start=20
-  _globals['_GOOGLEAUTHREQUEST']._serialized_end=54
-  _globals['_AUTHRESPONSE']._serialized_start=56
-  _globals['_AUTHRESPONSE']._serialized_end=144
-  _globals['_AUTHSERVICE']._serialized_start=146
-  _globals['_AUTHSERVICE']._serialized_end=223
+  _globals['_GOOGLEAUTHREQUEST']._serialized_end=53
+  _globals['_AUTHRESPONSE']._serialized_start=55
+  _globals['_AUTHRESPONSE']._serialized_end=143
+  _globals['_AUTHSERVICE']._serialized_start=145
+  _globals['_AUTHSERVICE']._serialized_end=222
 # @@protoc_insertion_point(module_scope)
